@@ -16,4 +16,16 @@ func main() {
 
 	delete(people, "wilson")
 	fmt.Printf("Posição não alocada: %d\n", people["wilson"])
+
+	// Desafio
+	fmt.Println("#### Desafio de Map ####")
+	desafio := map[int]float64{
+		1: 3.14,
+		2: 6.28,
+	}
+
+	for cod, val := range desafio {
+		fmt.Printf("Chave %d do mapa valor: %.2f\n", cod, val)
+	}
+
 }

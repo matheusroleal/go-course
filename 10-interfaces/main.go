@@ -18,6 +18,12 @@ func (d *Dog) Shout() string {
 	return "Rau rau!"
 }
 
+type Cat struct{}
+
+func (c *Cat) Shout() string {
+	return "Miauuu"
+}
+
 func main() {
 	var animal Animal
 
@@ -25,6 +31,9 @@ func main() {
 	callMyAnimal(animal)
 
 	animal = &Dog{}
+	callMyAnimal(animal)
+
+	animal = &Cat{}
 	callMyAnimal(animal)
 }
 
